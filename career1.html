@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="background-image">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarText">
+          <span class="navbar-text me-auto mb-2 mb-lg-3 text-white fs-3 fw-bold">
+            THE WEEKND
+          </span>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">CAREER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">MUSIC</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="about">
+        <div class="container bg-black">
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-12 text-center text-white  border d-flex justify-content-center align-items-center fs-5" id="kissland">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div id="career2-1"></div>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="text-white fs-4">
+                              <hr class="white-line text-white">
+                              <p id="2012-1"></p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div>
+                              <hr class="white-line text-white">
+                              <p id="2012"></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="text-white fs-4">
+                              <hr class="white-line text-white">
+                              <p id="career-trilogy"></p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div>
+                              <hr class="white-line text-white">
+                              <p id="text-trilogy"></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="text-white fs-4">
+                              <hr class="white-line text-white">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div>
+                              <hr class="white-line text-white">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6" id="ulaan">
+                </div>
+              </div>
+        </div>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+        var text = document.createElement('p');
+        text.innerText="Trilogoy and Kiss Land 2012-2014";
+        text.className='text-white fs-4 mt-2'
+        document.getElementById('kissland').appendChild(text);
+
+        var text2 = document.createElement('p');
+        text2.innerText="2012";
+        text2.className='mt-3'
+        document.getElementById('2012-1').appendChild(text2);
+        
+        var text3 = document.createElement('p');
+        text3.innerText="Trilogy";
+        text3.className='mt-3'
+        document.getElementById('career-trilogy').appendChild(text3);
+
+        var text1 = document.createElement('p');
+        text1.innerText="In April 2012, Tesfaye began his first international tour, which included performances at Coachella, sold-out shows at the Bowery Ballroom in New York City, which were positively reviewed by Rolling Stone and varioud European festivals, including Primavera Sound in Spain and Portugal, and the Wireless Festival in the United Kingdom, In September, Tesfaye signed with Republic Records, and XO was assumed as a subsidiary label.";
+        text1.className='text-justify text-white-50'
+        text1.style.fontSize='13px';
+        document.getElementById('2012').appendChild(text1);
+
+        var text1 = document.createElement('p');
+        text1.innerText="In April 2012, Tesfaye began his first international tour, which included performances at Coachella, sold-out shows at the Bowery Ballroom in New York City, which were positively reviewed by Rolling Stone and varioud European festivals, including Primavera Sound in Spain and Portugal, and the Wireless Festival in the United Kingdom, In September, Tesfaye signed with Republic Records, and XO was assumed as a subsidiary label.";
+        text1.className='text-justify text-white-50'
+        text1.style.fontSize='13px';
+        document.getElementById('text-trilogy').appendChild(text1);
+
+        var img = document.createElement('img');
+        img.src="career2-1.jpg";
+        img.className='mt-5 w-100  h-50'
+        document.getElementById('career2-1').appendChild(img);
+
+        var img2 = document.createElement('img');
+        img2.src="ulaan.jpg";
+        img2.className='img-fluid w-100 border border-danger '
+        document.getElementById('ulaan').appendChild(img2);
+
+        
+  </script>
+</body>
+</html>
